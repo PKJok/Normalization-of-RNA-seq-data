@@ -14,13 +14,15 @@ A statistical method to normalize RNA-seq data to account for differences in lib
 
 ### Why We Need It ###
 **1. Removes Technical Bias:** 
-    a. Corrects for differences in total RNA output (library size) between samples. A sample with 50 million reads shouldn't be directly compared to one with 20 million reads.
+a. Corrects for differences in total RNA output (library size) between samples. A sample with 50 million reads shouldn't be directly compared to one with 20 million reads.
+    
 **2. Corrects for Composition Bias:** 
-    a. Accounts for situations where a few very highly expressed genes in one sample "use up" a large portion of the sequencing reads, making all other genes in that sample appear under-represented.
-    b. Enables Accurate Comparison: Allows for a fair comparison of gene expression counts between samples, which is the fundamental goal of most RNA-seq studies (e.g., treated vs. control).
-    c. Improves Downstream Analysis: Essential for obtaining reliable results in Differential Expression (DE) analysis. Without it, you could falsely identify genes as DE due to technical biases rather than               biological truth.
+a. Accounts for situations where a few very highly expressed genes in one sample "use up" a large portion of the sequencing reads, making all other genes in that sample appear under-represented.
+b. Enables Accurate Comparison: Allows for a fair comparison of gene expression counts between samples, which is the fundamental goal of most RNA-seq studies (e.g., treated vs. control).
+c. Improves Downstream Analysis: Essential for obtaining reliable results in Differential Expression (DE) analysis. Without it, you could falsely identify genes as DE due to technical biases rather than         biological truth.
+    
 **3. Robust and Reliable:** 
-     a. The trimming step makes it resistant to outliers and a high proportion of differentially expressed genes, which is why it's a popular and trusted method.
+a. The trimming step makes it resistant to outliers and a high proportion of differentially expressed genes, which is why it's a popular and trusted method.
 
 ## 📂 Data Sources
 
