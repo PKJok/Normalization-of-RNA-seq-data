@@ -67,10 +67,3 @@ logcount <- cpm(TMM, log = TRUE)
 boxplot(logcount, ylab="TMM Normalized Counts")
 plotMDS(TMM, col=as.numeric(group))
 ```
-
-
-```
-
----
-
-Feel free to contribute or open issues for clarifications.
